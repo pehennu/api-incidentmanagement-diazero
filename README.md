@@ -91,8 +91,8 @@ Este documento descreve os endpoints disponíveis na API de gerenciamento de inc
 ---
 
 ### Insomnia
-- Vai acompanhado um json com as requisições para testes via insomnia.
-
+- Vai acompanhado um arquivo com as requisições para testes via insomnia. Importe-o no app do insomnia e ta pronto pra utilizar.
+- Caso queira testar em outro tipo postman, lembre de configurar a autenticacao basica pra user: admin e senha: password
 
 # 🛡️ Justificativa do Uso de Frameworks/Bibliotecas
 
