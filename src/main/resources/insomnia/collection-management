@@ -1,0 +1,221 @@
+type: collection.insomnia.rest/5.0
+name: Incident Management API Requisições
+meta:
+  id: wrk_e5953ad146674c4f91f7ab0b02d90d45
+  created: 1746651454970
+  modified: 1746651907013
+collection:
+  - name: Incidents
+    meta:
+      id: fld_31881e5eba5f4f1e8143f5eca233e52b
+      created: 1746651454974
+      modified: 1746651454974
+      sortKey: -1746651454974
+    children:
+      - url: "{{ base_url }}/api/incidents"
+        name: Create Incident
+        meta:
+          id: req_17105183780c4ec9b9070816fe3e3d0b
+          created: 1746651454983
+          modified: 1746651689585
+          isPrivate: false
+          sortKey: -1746651454983
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "name": "Example Incident",
+              "description": "This is a test incident"
+            }
+        headers:
+          - id: pair_2eed79a7f7284595b7b3c47351681b81
+            name: Content-Type
+            value: application/json
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          disabled: false
+          username: admin
+          password: password
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/api/incidents/1"
+        name: Update Incident
+        meta:
+          id: req_0e7fe3c37de64cd386e6144646a7dbee
+          created: 1746651454985
+          modified: 1746651790156
+          isPrivate: false
+          sortKey: -1746651454985
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "name": "Updated Incident",
+              "description": "Updated description"
+            }
+        headers:
+          - id: pair_1cbacd6f12234c0f828b7ba793217fdd
+            name: Content-Type
+            value: application/json
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          disabled: false
+          username: admin
+          password: password
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/api/incidents/1"
+        name: Delete Incident
+        meta:
+          id: req_c936f5a281834cec8e9712decade1566
+          created: 1746651454986
+          modified: 1746651831770
+          isPrivate: false
+          sortKey: -1746651454986
+        method: DELETE
+        headers:
+          - id: pair_b6387a3611e6453793def768b22231ec
+            name: Content-Type
+            value: application/json
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          disabled: false
+          username: admin
+          password: password
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/api/incidents"
+        name: Get All Incidents
+        meta:
+          id: req_40344cf26e3a47498df2308565dcfd8c
+          created: 1746651454987
+          modified: 1746651850039
+          isPrivate: false
+          sortKey: -1746651454987
+        method: GET
+        headers:
+          - id: pair_5b271e69f10b49c4a99bf03546682ba1
+            name: Content-Type
+            value: application/json
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          disabled: false
+          username: admin
+          password: password
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/api/incidents/1"
+        name: Get Incident By ID
+        meta:
+          id: req_b5cc8bb98a61459681b75627382c1822
+          created: 1746651454988
+          modified: 1746651870262
+          isPrivate: false
+          sortKey: -1746651454988
+        method: GET
+        headers:
+          - id: pair_1fc932b767f649a69f100e02494007d1
+            name: Content-Type
+            value: application/json
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          disabled: false
+          username: admin
+          password: password
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ base_url }}/api/incidents/last20"
+        name: Get Last 20 Incidents
+        meta:
+          id: req_4603ff58dafe44f095785ddc292fb8cd
+          created: 1746651454989
+          modified: 1746651889233
+          isPrivate: false
+          sortKey: -1746651454989
+        method: GET
+        headers:
+          - id: pair_a893295bd2044e6da8078299180c1c45
+            name: Content-Type
+            value: application/json
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          disabled: false
+          username: admin
+          password: password
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_fcfe892a1f60a1e2f9f0883b3f0908c74cffac72
+    created: 1746651454991
+    modified: 1746651490373
+  cookies:
+    - key: JSESSIONID
+      value: CF971D0AE4D615925B195CC4B7ADAAFA
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-05-07T20:58:10.373Z
+      lastAccessed: 2025-05-07T20:58:10.373Z
+      id: 4081f701-be30-4723-849b-157908aba74a
+environments:
+  name: Base Environment
+  meta:
+    id: env_6a4a0fc56fa945fd984ecbe84403d646
+    created: 1746651454973
+    modified: 1746651454973
+    isPrivate: false
+  data:
+    base_url: http://localhost:8080
